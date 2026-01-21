@@ -278,6 +278,10 @@ This is a template project. Fork it and make it your own!
 
 For issues or questions, please open an issue on the repository.
 
+## Donate 
+
+To support the developer, you can <a href="https://buy.stripe.com/14AaEWfRXcm5aPrfSag360b">make a donation here<a>.
+
 ---
 
 **Built with ❤️ for longevity and simplicity**

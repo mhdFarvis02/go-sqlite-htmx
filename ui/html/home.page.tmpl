@@ -1,0 +1,42 @@
+{{template "base" .}}
+
+{{define "title"}}Home - Permacomputing Web App{{end}}
+
+{{define "content"}}
+<section class="intro">
+	<h2>Welcome to Radical Simplicity</h2>
+	<p>
+		This application demonstrates a full-stack web app built with permacomputing principles.
+		Click "Edit" on any user card below to see HTMX in action.
+	</p>
+</section>
+
+<section class="users">
+	<h2>User Directory</h2>
+	<p class="subtitle">Click "Edit" to modify inline • No page reloads • Pure HTML over the wire</p>
+
+	<div class="user-grid">
+		{{range .Users}}
+		<div id="user-{{.ID}}" class="user-card">
+			<h3>{{.Name}}</h3>
+			<p><strong>Email:</strong> {{.Email}}</p>
+			<button hx-get="/user/{{.ID}}/edit" hx-target="#user-{{.ID}}" hx-swap="outerHTML">
+				Edit
+			</button>
+		</div>
+		{{end}}
+	</div>
+</section>
+
+<section class="principles">
+	<h2>Permacomputing Principles Applied</h2>
+	<ul>
+		<li><strong>Single Binary:</strong> All assets embedded via <code>//go:embed</code></li>
+		<li><strong>Zero Build Tools:</strong> No npm, webpack, or transpilers</li>
+		<li><strong>SQLite with WAL:</strong> Reliable, file-based database</li>
+		<li><strong>Standard Library First:</strong> Using Go 1.22+ <code>http.ServeMux</code></li>
+		<li><strong>HTMX for Interactivity:</strong> No JavaScript frameworks needed</li>
+		<li><strong>Semantic CSS:</strong> Styling by HTML tags, minimal classes</li>
+	</ul>
+</section>
+{{end}}

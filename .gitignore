@@ -1,0 +1,36 @@
+# Binaries
+perma-app
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Test binary
+*.test
+
+# Output of go coverage tool
+*.out
+
+# Database files
+app.db
+app.db-shm
+app.db-wal
+*.db
+*.db-shm
+*.db-wal
+
+# Go workspace file
+go.work
+
+# IDE files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Environment files
+.env
+.env.local

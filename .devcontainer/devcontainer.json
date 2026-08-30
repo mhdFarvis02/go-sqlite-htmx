@@ -1,0 +1,40 @@
+{
+  "name": "Go SQLite HTMX",
+  "dockerComposeFile": [
+    "../docker-compose.yml"
+  ],
+  "service": "app",
+  "workspaceFolder": "/workspace",
+  "shutdownAction": "stopCompose",
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "terminal.integrated.defaultProfile.linux": "attach-go-app",
+        "terminal.integrated.profiles.linux": {
+          "normal": {
+            "path": "bash"
+          },
+          "attach-go-app": {
+            "path": "bash",
+            "args": [
+              "-c",
+              "tmux attach-session -t go-app"
+            ]
+          }
+        }
+      },
+      "extensions": [
+        "golang.go",
+        "ms-azuretools.vscode-docker",
+        "ms-vscode-remote.remote-containers"
+      ]
+    }
+  },
+  "forwardPorts": [8080],
+  "portsAttributes": {
+    "8080": {
+      "label": "App",
+      "onAutoForward": "notify"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    init: true
+    tty: true
+    ports:
+      - "8080:8080"
+    volumes:
+      - .:/workspace
+      - ./data:/workspace/data
+    working_dir: /workspace

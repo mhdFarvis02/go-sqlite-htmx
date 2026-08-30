@@ -1,0 +1,13 @@
+#!/bin/bash
+
+set -o errexit
+set -o pipefail
+set -o nounset
+
+mkdir -p /workspace/data
+
+tmux new-session -d -s go-app "cd /workspace && /app/app"
+
+while tmux has-session -t go-app 2>/dev/null; do
+    sleep 2
+done

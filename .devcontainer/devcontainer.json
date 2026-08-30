@@ -6,6 +6,7 @@
   "service": "app",
   "workspaceFolder": "/workspace",
   "shutdownAction": "stopCompose",
+  "overrideCommand": false,
   "customizations": {
     "vscode": {
       "settings": {

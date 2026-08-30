@@ -1,0 +1,12 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: go-sqlite-htmx
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./data:/app/data
+    working_dir: /app/data
+    command: sh -c "mkdir -p /app/data && cd /app/data && /app/app"

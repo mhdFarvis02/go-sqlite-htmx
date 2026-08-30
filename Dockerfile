@@ -12,10 +12,21 @@ RUN CGO_ENABLED=1 GOOS=linux GOARCH=amd64 go build -ldflags="-s -w" -o /out/app 
 
 FROM alpine:3.20
 
-WORKDIR /app
+RUN apk add --no-cache bash git tmux
+
+RUN mkdir -p /workspace /app
+
+WORKDIR /workspace
 
 COPY --from=builder /out/app /app/app
 
+COPY ./start /start
+RUN sed -i 's/\r$//g' /start
+RUN chmod +x /start
+
 EXPOSE 8080
 
-CMD ["/app/app"]
+# Ensure the data dir exists before the app starts, then launch the tmux wrapper.
+RUN mkdir -p /workspace/data
+
+CMD ["/start"]

